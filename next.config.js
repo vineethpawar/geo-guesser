@@ -1,5 +1,7 @@
 const { withNativebase } = require("@native-base/next-adapter");
 const path = require("path");
+const dotenv = require("dotenv");
+const env = dotenv.config({ path: ".env.local" }).parsed;
 
 module.exports = withNativebase({
   dependencies: ["@native-base/icons", "react-native-web-linear-gradient"],
@@ -23,5 +25,6 @@ module.exports = withNativebase({
       ];
       return config;
     },
+    env: env,
   },
 });
