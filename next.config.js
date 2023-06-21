@@ -1,7 +1,7 @@
 const { withNativebase } = require("@native-base/next-adapter");
 const path = require("path");
 const dotenv = require("dotenv");
-const env = dotenv.config({ path: ".env.local" }).parsed;
+dotenv.config();
 
 module.exports = withNativebase({
   dependencies: ["@native-base/icons", "react-native-web-linear-gradient"],
@@ -25,6 +25,9 @@ module.exports = withNativebase({
       ];
       return config;
     },
-    env: env,
+    env: {
+      MAPBOX_API_KEY: process.env.MAPBOX_API_KEY,
+      GOOGLE_MAPS_API_KEY: process.env.GOOGLE_MAPS_API_KEY,
+    },
   },
 });
