@@ -1,6 +1,8 @@
 # GeoGuesser
-
+🚧🚧🚧 Currently Under Development 🚧🚧🚧
 Welcome to GeoGuesser! This web application is an in-progress multiplayer street view game where players need to guess the country based on a randomly generated street view image. The game also features a solo streak option, random multiplayer, and friend invite multiplayer modes.
+
+The app is currently deployed on Vercel at [https://geo-guesser-psi.vercel.app/](https://geo-guesser-psi.vercel.app/)
 
 ## Introduction
 
